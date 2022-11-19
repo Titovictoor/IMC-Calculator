@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-default:(to bottom, white, #666666);
+}
+
+.active {
+  background: 	#DAA520;
+  transform: scale(1.08);
+}
+
+/* --------------- HEADER -------------- */
+header {
+  margin-top: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 1px 5px 5px white;
+  border: 2px solid transparent;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  opacity: 90%;
+}
+
+/*  ---------------------------- BODY ---------------------------- */
+body {
+  background-image: url(./assets/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  list-style: none;
+}
+/*  ---------------------------- TABELA ---------------------------- */
+.tabela {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+table {
+  border-color: black;
+  width: 30%;
+}
+
+td {
+  height: 40px;
+  border: 2px solid black;
+}
+
+tr {  
+  transform:scale(1.0);
+  transition: all 0.1s;
+  background: linear-gradient(to bottom, white, #666666);
+}
+/*  ---------------------------- MAIN ---------------------------- */
+
+#main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin-top: 40px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+input.peso {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid black;
+  width: 300px;
+  display: flex;
+  height: 30px;
+}
+
+input.altura {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid black;
+  width: 300px;
+  display: flex;
+  height: 30px;
+}
+
+.submit {
+  margin-top: 10px;
+  border-radius: 60px;
+  justify-content: center;
+  width: fit-content;
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+.submit:hover {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 14px transparent;
+}
+
+.button.button {
+  background: none;
+  font: inherit;
+  margin: 7px;
+  padding: 10px 28px;
+  border-radius: 50px;
+}
+
+.button.button:hover {
+  background-color: #daa520;
+}
+
+/*  ---------------------------- ANIMATION  ---------------------------- */
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 black;
+  }
+}
