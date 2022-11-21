@@ -5,11 +5,11 @@
 }
 
 :root {
-  --color-default:(to bottom, white, #666666);
+  --color-default: (to bottom, white, #666666);
 }
 
 .active {
-  background: 	#DAA520;
+  background: #daa520;
   transform: scale(1.08);
 }
 
@@ -48,7 +48,8 @@ body {
 
 table {
   border-color: black;
-  width: 30%;
+  width: 100%;
+  max-width: 500px;
 }
 
 td {
@@ -56,8 +57,8 @@ td {
   border: 2px solid black;
 }
 
-tr {  
-  transform:scale(1.0);
+tr {
+  transform: scale(1);
   transition: all 0.1s;
   background: linear-gradient(to bottom, white, #666666);
 }
@@ -129,3 +130,23 @@ input.altura {
     box-shadow: 0 0 0 0 black;
   }
 }
+
+@media (max-width: 425px) {
+  .table {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .table {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  .table {
+    font-size: 15px;
+    max-width: 300px;
+  }
+}
+
